@@ -1,5 +1,13 @@
 # kickstart.nvim
 
+## My own part
+
+### My Neovim Installation
+
+1. Installed neovim version 0.11.2 with the installed binary compressed tarball (/opt) directory
+2. Managed the permissions
+3. Created desktop entry file
+
 ## Introduction
 
 A starting point for Neovim that is:
