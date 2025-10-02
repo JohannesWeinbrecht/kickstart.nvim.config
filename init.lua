@@ -420,11 +420,11 @@ require('lazy').setup({
         -- You can put your default mappings / updates / etc. in here
         --  All the info you're looking for is in `:help telescope.setup()`
         --
-        defaults = {
-          mappings = {
-            i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-          },
-        },
+        -- defaults = {
+        --   mappings = {
+        --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
+        --   },
+        -- },
         -- pickers = {}
         extensions = {
           ['ui-select'] = {
@@ -935,7 +935,7 @@ require('lazy').setup({
       -- Simple and easy statusline.
       --  You could remove this setup call if you don't like it,
       --  and try some other statusline plugin
-      local statusline = require 'mini.statusliQualitätne'
+      local statusline = require 'mini.statusline'
       -- set use_icons to true if you have a Nerd Font
       statusline.setup { use_icons = vim.g.have_nerd_font }
 
