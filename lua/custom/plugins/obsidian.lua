@@ -14,8 +14,6 @@ return {
     -- Required.
     'nvim-lua/plenary.nvim',
     'hrsh7th/nvim-cmp',
-
-    -- see below for full list of optional dependencies 👇
   },
   opts = {
     workspaces = {
@@ -24,9 +22,6 @@ return {
         path = '~/Documents/MainVault',
       },
     },
-
-    -- see below for full list of options 👇
   },
-  -- config = function ()
-  --   vim.keymap.set('n', '<leader>os', obsidian.vers
+  vim.api.nvim_set_keymap('n', '<leader>os', ':ObsidianSearch<CR>', { noremap = true, silent = false, desc = 'Search in Obsidian MainVault' }),
 }
