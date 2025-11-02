@@ -274,6 +274,7 @@ require('lazy').setup({
       -- Document existing key chains
       spec = {
         { '<leader>s', group = '[S]earch' },
+        { '<leader>o', group = '[O]bsidian' },
         { '<leader>t', group = '[T]oggle' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
       },
@@ -928,3 +929,8 @@ vim.cmd.colorscheme 'gruvbox'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- Set Conceallevel so Visuals of obsidian.nvim work better
+vim.opt.conceallevel = 2
+
+-- frontmatter.enabled = false

@@ -1,5 +1,5 @@
 return {
-  'obsidian.nvim/obsidian.nvim',
+  'obsidian-nvim/obsidian.nvim',
   version = '*', -- recommended, use latest release instead of latest commit
   -- commented out the following two lines to make sure that obsidian plugin is always loaded and vault is always accesible
   --lazy = true,
@@ -16,6 +16,12 @@ return {
     'hrsh7th/nvim-cmp',
   },
   opts = {
+    legacy_commands = false, -- Disable Legacy commands like ObsidianSearch and clear them from the name space, note that this is transition is poorly documentented besides from some warnings
+    --disable_frontmatter = true,
+    -- frontmatter.enable = false,
+    frontmatter = {
+      enabled = false,
+    },
     workspaces = {
       {
         name = 'Main',
@@ -23,5 +29,6 @@ return {
       },
     },
   },
-  vim.api.nvim_set_keymap('n', '<leader>os', ':ObsidianSearch<CR>', { noremap = true, silent = false, desc = 'Search in Obsidian MainVault' }),
+  vim.api.nvim_set_keymap('n', '<leader>os', ':Obsidian search<CR>', { noremap = true, silent = false, desc = 'Fuzzy Search in Obsidian MainVault' }),
+  vim.api.nvim_set_keymap('n', '<leader>oo', ':Obsidian quick_switch<CR>', { noremap = true, silent = false, desc = 'Quickswitch in Obsidian MainVault' }),
 }
