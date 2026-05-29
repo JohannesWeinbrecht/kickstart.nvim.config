@@ -406,6 +406,14 @@ require('lazy').setup({
     },
   },
   {
+    'folke/neoconf.nvim',
+    config = function()
+      require('neoconf').setup {
+        -- override any of the default settings here
+      }
+    end,
+  },
+  {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
     dependencies = {
