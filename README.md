@@ -7,6 +7,11 @@
 1. Installed neovim version 0.11.2 with the installed binary compressed tarball (/opt) directory
 2. Managed the permissions
 3. Created desktop entry file
+4. Created Simlink in /usr/local/bin
+
+Update 12-2025
+
+Installed 0.11.5 with the tarball package
 
 ## Introduction
 
