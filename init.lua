@@ -934,4 +934,6 @@ vim.cmd.colorscheme 'flexoki'
 -- Set Conceallevel so Visuals of obsidian.nvim work better
 vim.opt.conceallevel = 2
 
+vim.opt.autoread = true
+
 -- frontmatter.enabled = false
