@@ -973,6 +973,10 @@ require('lazy').setup({
   require 'custom.plugins.vim_be_good',
   require 'colorschemes',
   require 'custom.plugins.toggleterm',
+  require 'custom.plugins.java',
+  require 'custom.plugins.typst_preview',
+  require 'custom.plugins.nabla',
+  require 'custom.plugins.diffview',
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
