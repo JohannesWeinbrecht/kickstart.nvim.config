@@ -925,7 +925,7 @@ require('lazy').setup({
 })
 
 -- Set default colorscheme
-vim.cmd.colorscheme 'gruvbox'
+vim.cmd.colorscheme 'flexoki'
 -- You can also use :Telescope colortheme to search all themes
 
 -- The line beneath this is called `modeline`. See `:help modeline`
