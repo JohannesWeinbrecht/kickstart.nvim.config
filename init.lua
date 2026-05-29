@@ -614,6 +614,28 @@ require('lazy').setup({
         -- gopls = {},
         pyright = {},
         rust_analyzer = {},
+        jdtls = {
+          settings = {
+            java = {
+              configuration = {
+                runtimes = {
+                  {
+                    name = 'Java 25',
+                    path = '/usr/lib/jvm/java-25-openjdk-amd64',
+                    default = true,
+                  },
+                },
+              },
+            },
+          },
+        },
+        tinymist = {
+          settings = {
+            formatterMode = 'typstyle', -- TODO: Settings not working properly
+            exportPdf = 'onType',
+          },
+        },
+
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
