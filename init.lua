@@ -999,6 +999,7 @@ require('lazy').setup({
   require 'custom.plugins.typst_preview',
   require 'custom.plugins.nabla',
   require 'custom.plugins.diffview',
+  require 'custom.plugins.yazi',
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
