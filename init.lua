@@ -613,7 +613,11 @@ require('lazy').setup({
         clangd = {},
         -- gopls = {},
         pyright = {},
-        rust_analyzer = {},
+        rust_analyzer = {
+          check = {
+            command = 'clippy',
+          },
+        },
         jdtls = {
           settings = {
             java = {
@@ -734,7 +738,7 @@ require('lazy').setup({
         python = { 'ruff' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
-        -- javascript = { "prettierd", "prettier", stop_after_first = true },
+        javascript = { 'prettierd', 'prettier', stop_after_first = true },
       },
     },
   },
@@ -947,6 +951,15 @@ require('lazy').setup({
     end,
   },
   {
+    dir = '~/coding/nvim/nvim-best-practices-plugin-template',
+    name = 'langtool',
+    config = function()
+      require('langtool').setup {
+        -- Optional: pass custom settings here
+      }
+    end,
+  },
+  {
     'nvim-treesitter/nvim-treesitter',
     branch = 'master',
     lazy = false,
@@ -1038,5 +1051,8 @@ vim.cmd.colorscheme 'flexoki'
 vim.opt.conceallevel = 2
 
 vim.opt.autoread = true
+
+-- Map Ctrl+Backspace to Ctrl+W in insert mode
+vim.keymap.set('i', '<C-BS>', '<C-W>', { noremap = true })
 
 -- frontmatter.enabled = false
